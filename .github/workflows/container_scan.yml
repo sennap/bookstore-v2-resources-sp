@@ -87,7 +87,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Scan Container Image
-        uses: anchore/scan-action@v2.0.4
+        uses: anchore/scan-action@v3.2.4
         with:
           image: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
           debug: false
