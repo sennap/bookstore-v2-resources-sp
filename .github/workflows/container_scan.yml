@@ -128,7 +128,7 @@ jobs:
 
       - name: Run Trivy vulnerability scanner
         id: container_scan
-        uses: aquasecurity/trivy-action@0.0.18
+        uses: aquasecurity/trivy-action@0.2.4
         with:
           image-ref: ghcr.io/${{ github.repository_owner }}/${{ matrix.container }}
           format: template
